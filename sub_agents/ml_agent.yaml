@@ -1,0 +1,13 @@
+agent_class: LlmAgent
+name: ml_agent
+model: claude-sonnet-5
+instruction: !include ../prompts/ml_agent.md
+tools:
+  - write_file
+  - run_command
+  - submit_predictions
+  - select_submission
+  - get_status
+skills:
+  - skills/ml-pipeline
+generate_content_config: !include ../configs/llm_config.yaml
