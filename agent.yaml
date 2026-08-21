@@ -1,5 +1,5 @@
 agent_class: LoopAgent
-name: grandmaster
-max_iterations: 25
+name: ml_root_agent
+max_iterations: 50
 sub_agents:
   - config_path: sub_agents/ml_agent.yaml
